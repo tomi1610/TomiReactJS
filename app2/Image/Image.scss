@@ -1,0 +1,25 @@
+.image__link {
+  display: inline-block;
+  margin: 3px 8px 0 0;
+}
+
+.image {
+  display: block;
+  height: 120px;
+  margin: 0;
+  width: auto;
+}
+
+.selected {
+	position: relative;
+
+	&::after {
+		bottom: 0;
+		box-shadow: inset 0 0 0 3px #1976d2;
+		content: '';
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
